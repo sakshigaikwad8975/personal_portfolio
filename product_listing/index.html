@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Listing App</title>
+<link rel="stylesheet" href="product.css">
+</head>
+<body>
+
+<header class="main-header">
+<h1>🛍 Product Listing App</h1>
+</header>
+
+<div class="container">
+
+<div class="top-bar">
+<input type="text" id="searchInput" placeholder="Search products...">
+<div class="cart">🛒 Cart: <span id="cart-count">0</span></div>
+</div>
+
+<div class="shop-layout">
+
+<div class="left">
+<div class="controls">
+<select id="categoryFilter">
+<option value="all">All Categories</option>
+<option value="tech">Tech</option>
+<option value="fashion">Fashion</option>
+<option value="home">Home</option>
+</select>
+
+<select id="priceFilter">
+<option value="all">All Prices</option>
+<option value="low">Below ₹500</option>
+<option value="mid">₹500 – ₹1500</option>
+<option value="high">Above ₹1500</option>
+</select>
+
+<select id="sortPrice">
+<option value="default">Sort Price</option>
+<option value="low-high">Low → High</option>
+<option value="high-low">High → Low</option>
+</select>
+</div>
+
+<div class="grid" id="productGrid"></div>
+</div>
+
+<div class="right">
+<div class="cart-panel">
+<h2>Your Cart</h2>
+<div id="cart-items"></div>
+<hr>
+<h3>Total: ₹<span id="cart-total">0</span></h3>
+</div>
+</div>
+
+</div>
+</div>
+
+<script src="product.js"></script>
+</body>
+</html>
